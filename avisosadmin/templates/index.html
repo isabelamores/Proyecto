@@ -13,7 +13,7 @@
 <body>
   <div class="container">
     <h1 class="mb-4">Avisos</h1>
-    <button type="button" class="btn btn-success">Agregar aviso</button><br><br>
+    <a href="{% url 'registro' %}" type="button" class="btn btn-success">Agregar</a>
     <div class="table-responsive">
     <table id="avisosTable" class="table table-striped table-bordered" style="width:100%">
       <thead>
@@ -33,7 +33,7 @@
           <td>2024-06-01</td>
           <td>2024-06-30</td>
           <td>
-            <button class="btn btn-warning btn-sm">Editar</button>
+            <a href="{% url 'editar' %}" class="btn btn-warning btn-sm">Editar</a>
             <button class="btn btn-danger btn-sm">Eliminar</button>
           </td>
         </tr>
