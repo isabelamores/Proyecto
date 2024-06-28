@@ -48,7 +48,10 @@
     <!-- Script para inicializar DataTables en la tabla con ID 'informeTable' -->
     <script>
     $(document).ready(function() {
-        $('#informeTable').DataTable();
+        $('#informeTable').DataTable({
+            "language": {
+                "url": "/static/Spanish.json"
+            }});
     });
     </script>
 </body>
